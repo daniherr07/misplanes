@@ -13,6 +13,7 @@ export default function Login() {
       </div>
 
       <main className={style.mainFormulario}>
+        <Image src={"logoWhite.svg"} width={200} height={200} alt='Imagen del Logo' className={style.logoMobile}/>
         <h1 className={style.title}>Iniciar Sesión</h1>
         <form className={style.form} style={{flexDirection: "column"}} action='/api/login' method='POST'>
           <input

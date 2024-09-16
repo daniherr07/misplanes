@@ -40,6 +40,11 @@
     padding: 20px;
     border-radius: 5px;
 
+    & .logoMobile{
+        display: none;
+        place-self: center;
+    }
+
     & .title {
         font-weight: 600;
         margin-bottom: 10vh;
@@ -94,5 +99,9 @@
 
     .mainFormulario{
         width: 100vw !important;
+    }
+
+    .logoMobile{
+        display: block !important;
     }
 }
