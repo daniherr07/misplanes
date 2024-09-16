@@ -1,0 +1,160 @@
+.crearPlaneamientoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.formularioContainer {
+  flex: 1 1 300px;
+  border: 1px solid #2A72B5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titlePlaneamiento {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2A72B5;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.selectInput {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.buttonCrear {
+  padding: 10px;
+  background-color: #2A72B5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.buttonCrear:hover {
+  background-color: #1f5a8b;
+}
+
+.instruccionesContainer {
+  flex: 1 1 300px;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instruccionesContainer p {
+  font-size: 1.5rem;
+  color: #777;
+  text-align: center;
+}
+
+
+.planeamientoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.previewContainer {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+}
+
+.previewHeader {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2A72B5;
+}
+
+.previewContent {
+  background-color: #2A72B5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.previewContent p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.actividadesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.actividadCard {
+  font-family: "Montserrat", sans-serif;
+  background-color: #A9D18E;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.actividadCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.actividadCard p {
+  font-size: 1rem;
+}
+
+.buttonVerCompleto {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.buttonVerCompleto:hover {
+  background-color: #e67e00;
+}
+
+.creditos {
+  background-color: #2A72B5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}

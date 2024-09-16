@@ -1,0 +1,76 @@
+.crearPlaneamientoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .formularioContainer {
+    flex: 1 1 300px;
+    border: 1px solid #2A72B5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titlePlaneamiento {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2A72B5;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .selectInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Barlow Condensed", sans-serif;
+
+    &:active{
+        border-radius: 5px;
+        outline: none;
+    }
+  }
+  
+  .buttonCrear {
+    padding: 10px;
+    background-color: #2A72B5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  
+  .buttonCrear:hover {
+    background-color: #1f5a8b;
+  }
+  
+  .instruccionesContainer {
+    font-family: "Montserrat", sans-serif;
+    flex: 1 1 300px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .instruccionesContainer p {
+    font-size: 1.5rem;
+    color: #777;
+    text-align: center;
+  }
+

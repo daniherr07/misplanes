@@ -1,0 +1,90 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: #FBFBFB;
+
+    & .form{
+        place-self: center;
+        background-color: #fff;
+        font-family: "Montserrat", sans-serif;
+        min-width: 30em;
+        width: 30vw;
+        height: 90vh;
+        border: 1px solid #C9C9C9;
+        display: flex;
+        flex-direction: column;
+        place-content: space-around;
+        text-align: start;
+        padding: 20px;
+
+        .div{
+            display: flex;
+            flex-direction: column;
+
+            & .label{
+                color: #2364AA;
+            }
+        }
+
+        & .title{
+            place-self: center;
+            font-weight: 400;
+        }
+        
+    }
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 2.5em;
+    font-size: 1em;
+    padding: 0 5px 0 5px;
+    width: 100%;
+    position: relative;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+
+.passContainer, .passContainer2{
+    position: relative;
+}
+.eye{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.checkBoxContianer{
+    display: flex;
+    gap: 5px;
+}
+
+.submitBtn{
+    height: 60px;
+    max-height: 4em;
+    border: none;
+    color: #fff;
+    background-color: #2364AA;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px #00000049;
+    font-size: 20px;
+}
+
+.licenseP{
+    color: #3F3F3F;
+}
+
+@media (max-width: 500px) {
+    .form{
+        min-width: 100vw !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}

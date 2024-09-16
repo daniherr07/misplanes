@@ -94,3 +94,17 @@
         height: 2em;
     }
 }
+
+@media (max-width: 1300px){
+    .misc{
+        display: none;
+    }
+
+    .searchInput{
+        width: 50vw !important;
+    }
+
+    .navbar{
+        padding: 0 20px 0 20px !important;
+    }
+}
