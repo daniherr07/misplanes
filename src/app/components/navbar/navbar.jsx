@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import navbarStyle from './navbar.module.css'
 import SelectPicker from '../selectPicker/SelectPicker'
+import { Suspense } from 'react'
+
 
 
 
@@ -8,6 +10,7 @@ export default function NavBar() {
     
     return(
         <>
+
         <nav className={navbarStyle.navbar}>
             <form action="/api/login" method='POST'>
                 <button type='submit' style={{background: "none", border: "none"}}>
@@ -19,7 +22,10 @@ export default function NavBar() {
             
 
             <div className={navbarStyle.search}>
-                <SelectPicker></SelectPicker>
+                <Suspense>
+                    <SelectPicker></SelectPicker>
+                </Suspense>
+                
                 <Image src='lupa.svg' alt='icono lupa' width={100} height={100} className={navbarStyle.searchIcon}/>
             </div>
 
