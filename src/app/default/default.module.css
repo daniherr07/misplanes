@@ -5,7 +5,7 @@
 }
 
 .article{
-    flex-grow: 1;
+    height: 100%;
 
     & .header{
         position: relative;
@@ -48,5 +48,69 @@
         font-family: "Barlow Condensed", sans-serif;
         font-weight: 400;
         font-size: 30px;
+        position: relative;
+        
+        & .card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            place-content: center;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            height: 80%;
+            max-height: 80%;
+            width: 15%;
+            border-radius: 4px 4px 17px 0;
+            justify-content: space-evenly;
+            padding: 10px;
+            box-shadow: 0 2px 5px 1px #00000049 !important;
+
+            & .antetituloCard{
+                font-size: 1rem;
+                text-decoration: underline;
+            }
+
+            & .titleCard{
+                font-size: 1.8rem;
+            }
+
+            & .dateCard{
+                font-size: 1rem;
+                color: #CECECE;
+            }
+
+            & .gradeCard{
+                font-size: 1.8rem;
+            }
+
+            & .unitCard{
+                color: #CECECE;
+                & .unitCardSpan{
+                    color: #fff;
+                }
+            }
+
+            & .descCard{
+                font-size: 1.8em;
+            }
+
+            & .buttonDownload{
+                font-size: 1.1rem;
+                font-family: "Barlow Condensed", sans-serif;
+                border: none;
+                background-color: #fff;
+                width: 80%;
+                height: 2em;
+                border-radius: 5px;
+                color: #6494CC;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
+

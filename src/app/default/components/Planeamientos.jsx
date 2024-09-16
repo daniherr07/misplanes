@@ -1,5 +1,6 @@
 import style from '../default.module.css'
 import Image from "next/image";
+import {planData} from '../const/cardData'
 
 export default function Planeamientos(){
     return(
@@ -14,13 +15,20 @@ export default function Planeamientos(){
 
         <div className={`${style.slider} ${style.plan}`}>
             <Image className={style.leftArrow} src='arrowLeft.svg' width={50} height={50} alt="Left Arrow"  />
-            <div className={style.planesContent}>
-                <div className={style.card}>
-                    <p style={style.antetituloCard}>CTP Mercedes Norte</p>
-                    <h1 style={style.titleCard}>Diseño de software</h1>
-                    <p style={style.fechaCard}>29/07/23</p>
-                </div>
-            </div>
+            {
+                planData.map(item => (
+                    <div className={style.card} style={{backgroundColor: `${item.color}`}} key={item.id}>
+                        <p className={style.antetituloCard}>{item.subtitle}</p>
+                        <h1 className={style.titleCard}>{item.subject}</h1>
+                        <p className={style.dateCard}>{item.date}</p>
+                        <h2 className={style.gradeCard}>{item.grade}</h2>
+                        <h2 className={style.unitCard}><span className={style.unitCardSpan}>Unidad: </span>{item.unit}</h2>
+
+                        <button className={style.buttonDownload}>Descargar PDF</button>
+                        <p className={style.seeActivities}>Ver Actividades Asociadas</p>
+                    </div>
+                ))
+            }
             <Image className={style.rightArrow} src='arrowright.svg' width={50} height={50} alt="Left Arrow"  />
         </div>
     </article>
