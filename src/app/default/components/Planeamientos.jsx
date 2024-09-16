@@ -7,10 +7,13 @@ export default function Planeamientos(){
     <article className={style.article}>
         <header className={style.header}>
             <h1>Planeamientos Creados</h1>
-            <div className={style.addPlaneamiento}>
-                <h1>Crear nuevo planeamiento</h1>
-                <Image src={'plus.svg'} width={30} height={30} alt="Plus"></Image>
-            </div>
+            <form action="/api/planeamiento" method='POST' >
+                <button type='submit' className={style.addPlaneamiento}>
+                        <h1>Crear nuevo planeamiento</h1>
+                        <Image src={'plus.svg'} width={30} height={30} alt="Plus"></Image>
+                </button>
+            </form>
+
         </header>
 
         <div className={`${style.slider} ${style.plan}`}>

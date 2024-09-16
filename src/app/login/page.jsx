@@ -8,13 +8,13 @@ export default function Login() {
     <>
     <div className={style.loginContainer}>
       <div className={style.leftSide}>
-        <h1 className={style.phrase}>La plataforma de los educadores para los educadores, o una frase asi bien inspiradora bonita</h1>
+        <h1 className={style.phrase}>Planea tus actividades diarias: somos una plataforma que te guía en el proceso de mediación pedagógica y creación de estrategias educativas</h1>
         <Image src={"logoWhite.svg"} width={500} height={500} alt='Imagen del Logo'/>
       </div>
 
       <main className={style.mainFormulario}>
         <h1 className={style.title}>Iniciar Sesión</h1>
-        <form className={style.form}>
+        <form className={style.form} action='/api/login' method='POST'>
           <input
             type="text"
             id="usuario"

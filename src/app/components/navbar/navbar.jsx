@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import navbarStyle from './navbar.module.css'
+import SelectPicker from '../selectPicker/SelectPicker'
+
 
 
 export default function NavBar() {
@@ -7,19 +9,30 @@ export default function NavBar() {
     return(
         <>
         <nav className={navbarStyle.navbar}>
-            <Image src='logoWhite.svg' alt='Logo de planes' width={200} height={200} className={navbarStyle.logo}/>
+            <form action="/api/login" method='POST'>
+                <button type='submit' style={{background: "none", border: "none"}}>
+                    <Image src='logoWhite.svg' alt='Logo de planes' width={200} height={200} className={navbarStyle.logo} />
+                </button>
+                
+            </form>
+            
             
 
             <div className={navbarStyle.search}>
-                <input type="text" name="search" id="searchInput" className={navbarStyle.searchInput} placeholder='Buscar'/>
+                <SelectPicker></SelectPicker>
                 <Image src='lupa.svg' alt='icono lupa' width={100} height={100} className={navbarStyle.searchIcon}/>
             </div>
 
             <div className={navbarStyle.misc}>
-                <span className={navbarStyle.coinsButton}>
-                    <Image src='coins.svg' alt='coin' width={100} height={100} className={navbarStyle.coinIcon}/>
-                    <p className={navbarStyle.coinText}>12</p>
-                </span>
+
+                <form action='/api/purchase' method='POST'>
+                    <button type='submit' style={{ border:"none"}} className={navbarStyle.coinsButton}>
+                        <Image src='coins.svg' alt='coin' width={100} height={100} className={navbarStyle.coinIcon}/>
+                        <p className={navbarStyle.coinText}>12</p>
+                    </button>
+                </form>
+
+
 
                 <span className={navbarStyle.userInfo}>
                     <Image src='user.svg' alt='userIcon' width={10} height={10} className={navbarStyle.userIcon}/>

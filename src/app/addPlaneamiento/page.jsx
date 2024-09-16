@@ -10,7 +10,7 @@ export default function CrearPlaneamiento() {
       {/* Formulario de creación de planeamiento */}
       <div className={styles.formularioContainer}>
         <h2 className={styles.titlePlaneamiento}>Crear planeamiento</h2>
-        <form className={styles.form}>
+        <form className={styles.form} action='/api/addedPlaneamiento' method='POST'>
           <select className={styles.selectInput}>
             <option value="">Centro educativo</option>
             {/* Agrega las opciones reales */}
