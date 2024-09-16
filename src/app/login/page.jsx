@@ -14,7 +14,7 @@ export default function Login() {
 
       <main className={style.mainFormulario}>
         <h1 className={style.title}>Iniciar Sesión</h1>
-        <form className={style.form} action='/api/login' method='POST'>
+        <form className={style.form} style={{flexDirection: "column"}} action='/api/login' method='POST'>
           <input
             type="text"
             id="usuario"

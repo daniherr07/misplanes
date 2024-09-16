@@ -96,15 +96,35 @@
 }
 
 @media (max-width: 1300px){
-    .misc{
+
+    .userName{
         display: none;
     }
-
     .searchInput{
         width: 50vw !important;
     }
 
     .navbar{
         padding: 0 20px 0 20px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headsetIcon{
+        display: none;
+    }
+    
+    .search{
+        gap: 5px;
+    }
+
+    .misc{
+        gap: 5px;
+    }
+    .navbar{
+        padding: 0 10px 0 10px !important;
+    }
+    .coinsButton{
+        padding: 4px 4px !important;
     }
 }

@@ -6,10 +6,10 @@ export default function Planeamientos(){
     return(
     <article className={style.article}>
         <header className={style.header}>
-            <h1>Planeamientos Creados</h1>
+            <h1 className={style.headerPlan}>Planeamientos Creados</h1>
             <form action="/api/planeamiento" method='POST' >
                 <button type='submit' className={style.addPlaneamiento}>
-                        <h1>Crear nuevo planeamiento</h1>
+                        <h1 className={style.crearText}>Crear nuevo planeamiento</h1>
                         <Image src={'plus.svg'} width={30} height={30} alt="Plus"></Image>
                 </button>
             </form>
@@ -18,6 +18,7 @@ export default function Planeamientos(){
 
         <div className={`${style.slider} ${style.plan}`}>
             <Image className={style.leftArrow} src='arrowLeft.svg' width={50} height={50} alt="Left Arrow"  />
+            <div className={style.cardsContainer}>
             {
                 planData.map(item => (
                     <div className={style.card} style={{backgroundColor: `${item.color}`}} key={item.id}>
@@ -32,7 +33,9 @@ export default function Planeamientos(){
                     </div>
                 ))
             }
-            <Image className={style.rightArrow} src='arrowright.svg' width={50} height={50} alt="Left Arrow"  />
+            </div>
+            
+            <Image className={style.rightArrow} src='arrowRight.svg' width={50} height={50} alt="Left Arrow"  />
         </div>
     </article>
     )

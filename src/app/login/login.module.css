@@ -19,7 +19,7 @@
     
     & .phrase{
         font-family: "Barlow Condensed", sans-serif;
-        font-size: 4.5rem;
+        font-size: 2rem;
         font-weight: lighter;
     }
   }
@@ -87,3 +87,12 @@
     }
 }
 
+@media (max-width:900px){
+    .leftSide{
+        display: none;
+    }
+
+    .mainFormulario{
+        width: 100vw !important;
+    }
+}

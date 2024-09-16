@@ -11,6 +11,8 @@ export default function Actividades(){
 
         <div className={`${style.slider} ${style.act}`}>
             <Image className={style.leftArrow} src='arrowLeft.svg' width={50} height={50} alt="Left Arrow"  />
+
+            <div className={style.cardsContainer}>
             {
                 activityData.map(item => (
                     <div className={style.card} style={{backgroundColor: `${item.color}`}} key={item.id}>
@@ -23,7 +25,9 @@ export default function Actividades(){
                     </div>
                 ))
             }
-            <Image className={style.rightArrow} src='arrowright.svg' width={50} height={50} alt="Left Arrow"  />
+            </div>
+            
+            <Image className={style.rightArrow} src='arrowRight.svg' width={50} height={50} alt="Left Arrow"  />
         </div>
     </article>
     )
