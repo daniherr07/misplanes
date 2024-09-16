@@ -26,11 +26,11 @@ const cardData =
     },
     {
         "subtitle": "Escuela Excelencia Mercedes Sur",
-        "subject": "Ciencias",
+        "subject": "Programación",
         "date": "29/07/2023",
-        "grade": "Sétimo",
-        "unit": "Balanceo de ecuaciones quimicas y soluciones",
-        "color": "#6CA760"
+        "grade": "Undécimo",
+        "unit": "Tecnologías de Información y Comunicación",
+        "color": "#333333"
     }
 
 ]
