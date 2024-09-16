@@ -1,0 +1,52 @@
+.main{
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.article{
+    flex-grow: 1;
+
+    & .header{
+        position: relative;
+        height: 18%;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        
+
+        & .addPlaneamiento{
+            display: flex;
+            place-content: center;
+            place-items: center;
+            background-color: #FEC601;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px #00000049;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            text-shadow: 0 2px 5px #00000049;
+            gap: 5px;
+            right: 10%;
+        }
+
+    }
+
+    & .slider{
+        height: 82%;
+        width: 100%;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+}

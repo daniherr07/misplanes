@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+
+.navbar{
+    width: 100vw;
+    height: 80px;
+    background-color: #2364AA;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 102px 0 102px;
+}
+
+
+.logo{
+    width: 3.6em;
+    height: 3.6em;
+    display: block;
+}
+
+.search{
+    display: flex;
+    place-items: center;
+    gap: 23px;
+
+    
+    & .searchInput{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        width: 40em;
+        height: 2.6em;
+        border: none;
+        border-radius: 10px;
+        padding: 0 13px 0 13px;
+    }
+
+    & .searchIcon{
+        width: 2em;
+        height: 2em;
+    }
+}
+
+.misc{
+    display: flex;
+    place-items: center;
+    gap: 23px;
+
+    & .coinsButton{
+        background-color: white;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        place-items: center;
+        gap: 9px;
+        padding: 4px 18px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px #00000049;
+
+        & .coinIcon{
+            width: 2em;
+            height: 2em;
+        }
+
+        & .coinText{
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 2em;
+            color: #EA7317;
+        }
+    }
+
+    & .userInfo{
+        display: flex;
+        place-items: center;
+        gap: 10px;
+
+        & .userIcon{
+            width: 2em;
+            height: 2em;
+            filter: drop-shadow(0 2px 5px #00000049);
+        }
+
+        & .userName{
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 2em;
+            color: #fff;
+            margin-right: 42px;
+        }
+    }
+
+    & .headsetIcon{
+        width: 2em;
+        height: 2em;
+    }
+}
